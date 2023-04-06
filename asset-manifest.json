@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/beardedgentelman.github.io/static/css/main.e4abf4e4.css",
+    "main.js": "/beardedgentelman.github.io/static/js/main.b5c57bc5.js",
+    "static/media/inactive.svg": "/beardedgentelman.github.io/static/media/inactive.e2c8d2b012ba901b4429fb988b242aeb.svg",
+    "static/media/active.svg": "/beardedgentelman.github.io/static/media/active.1c6a4ef6f6f8d832ecc3607c5829a0cb.svg",
+    "static/media/logo-icon.svg": "/beardedgentelman.github.io/static/media/logo-icon.fe984a6cdb2ef8c5a0b69a7ef20deea3.svg",
+    "index.html": "/beardedgentelman.github.io/index.html",
+    "static/media/search.svg": "/beardedgentelman.github.io/static/media/search.d555a35800fec6f7c1928aef95546ef7.svg",
+    "main.e4abf4e4.css.map": "/beardedgentelman.github.io/static/css/main.e4abf4e4.css.map",
+    "main.b5c57bc5.js.map": "/beardedgentelman.github.io/static/js/main.b5c57bc5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4abf4e4.css",
+    "static/js/main.b5c57bc5.js"
+  ]
+}
