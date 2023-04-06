@@ -1,0 +1,274 @@
+.main {
+  max-width: 968px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  flex: 1 1 auto;
+
+  @media screen and (min-width: 1920px) {
+    max-width: 1200px;
+  }
+
+  @media screen and (max-width: 1080px) {
+    width: calc(100% - 100px);
+  }
+
+  & .customers {
+    & .customers__title {
+      font-weight: 500;
+      font-size: 24px;
+      margin-bottom: 3.125rem;
+
+      @media screen and (max-width: 1080px) {
+        padding-inline: 1.5rem;
+      }
+    }
+
+    & .customers__table_wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 2.5rem;
+      background: #ffffff;
+      box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+      border-radius: 30px;
+      overflow: hidden;
+
+      @media screen and (max-width: 620px) {
+        padding: 1.5rem;
+      }
+
+      & .customers__table_info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 480px) {
+          flex-direction: column;
+          text-align: center;
+          gap: 1rem;
+        }
+
+        & .customers__table_title {
+          display: flex;
+          flex-direction: column;
+
+          & h4 {
+            font-weight: 600;
+            font-size: 22px;
+          }
+
+          & span {
+            margin-top: 1.5rem;
+            color: #16c098;
+          }
+        }
+
+        & label {
+          display: flex;
+          align-items: center;
+          min-width: 216px;
+          border-radius: 10px;
+          background: #f9fbff;
+          padding: 0.438rem;
+          overflow: hidden;
+          cursor: text;
+
+          & input {
+            width: 100%;
+            height: 100%;
+            background: #f9fbff;
+            margin-left: 0.3rem;
+            outline: none;
+            border: 0;
+            font-family: 'Poppins';
+            font-size: 12px;
+
+            &::placeholder {
+              /* Chrome, Firefox, Opera, Safari 10.1+ */
+              color: #b5b7c0;
+              opacity: 1; /* Firefox */
+            }
+
+            &:-ms-input-placeholder {
+              /* Internet Explorer 10-11 */
+              color: #b5b7c0;
+            }
+
+            &::-ms-input-placeholder {
+              /* Microsoft Edge */
+              color: #b5b7c0;
+            }
+          }
+        }
+      }
+
+      & .customers__table {
+        @media screen and (max-width: 1080px) {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      & .customers__table_container {
+        margin-top: 2.857rem;
+
+        & .customers__table_head {
+          position: relative;
+          padding-bottom: 0.875rem;
+
+          @media screen and (max-width: 1080px) {
+            display: none;
+          }
+
+          &::after {
+            content: '';
+            width: 110%;
+            height: 1px;
+            background: #eeeeee;
+            position: absolute;
+            bottom: 0;
+            left: -5%;
+          }
+
+          & .customers__table_head_row {
+            & .customers__table_head_cell {
+              color: #b5b7c0;
+            }
+          }
+        }
+
+        & .customers__table_body {
+          @media screen and (max-width: 1080px) {
+            display: block;
+            width: 100%;
+          }
+
+          & .customers__table_body_row {
+            border-bottom: 1px solid #eeeeee;
+
+            @media screen and (max-width: 1080px) {
+              display: block;
+              width: 100%;
+            }
+
+            & .customers__table_body_cell {
+              padding: 1.25rem 0;
+              color: #292d32;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+
+              @media screen and (max-width: 1080px) {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                &:last-of-type {
+                  max-width: 100%;
+                }
+
+                &::before {
+                  content: attr(data-label);
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+
+        & .customers__table_head_row,
+        & .customers__table_body_row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+        }
+
+        & .customers__table_head_cell,
+        & .customers__table_body_cell {
+          &:first-of-type {
+            width: 10.75rem;
+          }
+          &:nth-child(2) {
+            width: 8.125rem;
+          }
+          &:nth-child(3) {
+            width: 9.75em;
+          }
+          &:nth-child(4) {
+            width: 13rem;
+          }
+          &:nth-child(5) {
+            width: 8.75em;
+          }
+          &:last-child {
+            width: 5rem;
+
+            & img {
+              max-width: 5rem;
+              width: 100%;
+            }
+          }
+        }
+
+        & .customers__table_footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 2rem;
+
+          @media screen and (max-width: 480px) {
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+          }
+
+          & .customers__table_showing_entries {
+            color: #b5b7c0;
+          }
+
+          & .customers__table_showing_pagination {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 0.75rem;
+            margin-top: 1rem;
+
+            @media screen and (max-width: 480px) {
+              gap: 0;
+            }
+
+            & button {
+              font-family: 'Poppins';
+              font-size: 12px;
+              width: 24px;
+              height: 24px;
+              background: #f5f5f5;
+              border: 1px solid #eeeeee;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+
+            & span {
+              margin: 0 0.5rem;
+              font-size: 0.8rem;
+              font-weight: bold;
+              user-select: none;
+              text-align: end;
+            }
+
+            & .active {
+              background-color: #5932ea;
+              color: white;
+              border: none;
+              outline: none;
+              cursor: default;
+            }
+          }
+        }
+      }
+    }
+  }
+}
